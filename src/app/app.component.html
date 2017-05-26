@@ -1,12 +1,14 @@
-<h1>{{title}}</h1>
-<div class="mdl-grid">
-	<div class="mdl-cell mdl-cell--4-col">
-		<app-summary-card [storeSummary]="newCustomersCount"></app-summary-card>
-	</div>
-	<div class="mdl-cell mdl-cell--4-col">
-		<app-summary-card [storeSummary]="activeUsersCount"></app-summary-card>
-	</div>
-	<div class="mdl-cell mdl-cell--4-col">
-		<app-summary-card [storeSummary]="salesSum"></app-summary-card>
+<div class="container pt-4">
+	<h1>{{title}}</h1>
+	<div class="row pt-4">
+		<div class="col">
+			<app-summary-card [storeSummary]="newCustomersCount"></app-summary-card>
+		</div>
+		<div class="col">
+			<app-summary-card [storeSummary]="activeUsersCount"></app-summary-card>
+		</div>
+		<div class="col">
+			<app-summary-card [storeSummary]="salesSum"></app-summary-card>
+		</div>
 	</div>
 </div>
